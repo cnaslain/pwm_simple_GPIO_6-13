@@ -8,7 +8,7 @@ I've just modified the path to the rpm file and add a new log file for the data 
 I've also added a new simple systemd service.
 
 Setup:
-``
+```
 cd /home/pi
 git clone THIS REPO pwm_fan
 cd pwm_fan
@@ -18,4 +18,4 @@ sudo systemctl daemon-reload
 sudo systemctl start pwm_simple_GPIO_6-13
 sudo systemctl status -a pwm_simple_GPIO_6-13
 sudo systemctl enable pwm_simple_GPIO_6-13
-``
+```
