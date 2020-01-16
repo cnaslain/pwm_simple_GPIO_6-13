@@ -3,7 +3,7 @@
 This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1511085 article post by Artain; thanks to him for this simple PWM solution.
 
 ## Hardware and building
-- Raspberry Pi 4 B
+- Raspberry Pi 4 B (but it should work on all 40 pins GPIO Pi boards)
 - Noctua NF-A4x10 5V PWM 4 pins cooler
 - A 2.2 kΩ resistor
 
