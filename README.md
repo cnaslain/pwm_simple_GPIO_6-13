@@ -1,6 +1,8 @@
 # pwm_simple_GPIO_6-13
 Raspberry Pi simple PWM script
 
+This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1514761 article post.
+
 Hardware: 
 - Raspberry Pi 4 B
 - Noctua NF-A4x10 5V PWM 4 pins cooler
@@ -14,9 +16,9 @@ Connexion of the 4 pin wire:
 
 Wire chart: ![Wiring diagram](electronic_diagram.jpg)
 
-This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1514761 script.
-
-I've just modified the path to the rpm file and add a new log file for the data output, so I can read them with a LUA script in Domoticz
+I've just modified the following stuffs on the python script:
+- default path to the rpm file
+- new log file for the data output, so I can read them with a LUA script in Domoticz
 
 I've also added a new simple systemd service.
 
