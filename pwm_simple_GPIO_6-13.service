@@ -1,0 +1,14 @@
+[Unit]
+Description=Simple GPIO 613 PWM fan script
+After=multi-user.target
+
+[Service]
+Type=simple
+StandardOutput=null
+StandardError=null
+User=root
+ExecStart=/usr/bin/python /home/pi/pwm_fan/pwm_simple_GPIO_6-13.py
+WorkingDirectory=/home/pi/pwm_fan
+
+[Install]
+WantedBy=multi-user.target
