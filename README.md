@@ -12,7 +12,7 @@ Connexion of the 4 pin wire:
 - Green: Tacho on GPIO 6
 - Blue: PWM on GPIO 13
 
-Wire chart: ![Wiring diagram](images/electronic_diagram.jpg)
+Wire chart: ![Wiring diagram](electronic_diagram.jpg)
 
 This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1514761 script.
 
