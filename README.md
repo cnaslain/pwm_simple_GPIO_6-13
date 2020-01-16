@@ -1,5 +1,18 @@
 # pwm_simple_GPIO_6-13
-Raspberry Pi simple RPM
+Raspberry Pi simple PWM script
+
+Hardware: 
+- Raspberry Pi 4 B
+- Noctua NF-A4x10 5V PWM 4 pins cooler
+- A 2.2 kΩ resistor
+
+Connexion of the 4 pin wire:
+- Black wire: GND
+- Yellow wire: 5V
+- Green: Tacho on GPIO 6
+- Blue: PWM on GPIO 13
+
+Wire chart: ![Wiring diagram](images/diagram.png)
 
 This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1514761 script.
 
