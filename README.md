@@ -34,3 +34,27 @@ sudo systemctl start pwm_simple_GPIO_6-13
 sudo systemctl status -a pwm_simple_GPIO_6-13
 sudo systemctl enable pwm_simple_GPIO_6-13
 ```
+
+Example of status output:
+```
+pi@raspberrypi4:~/pwm_fan $ sudo systemctl status -a pwm_simple_GPIO_6-13
+● pwm_simple_GPIO_6-13.service - Simple GPIO 613 PWM fan script
+   Loaded: loaded (/home/pi/pwm_fan/pwm_simple_GPIO_6-13.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2020-01-16 22:00:59 CET; 42min ago
+ Main PID: 12036 (python)
+    Tasks: 3 (limit: 4915)
+   Memory: 2.2M
+   CGroup: /system.slice/pwm_simple_GPIO_6-13.service
+           └─12036 /usr/bin/python /home/pi/pwm_fan/pwm_simple_GPIO_6-13.py
+
+Jan 16 22:00:59 raspberrypi4.xxx.com systemd[1]: Started Simple GPIO 613 PWM fan script.
+```
+
+Logs:
+```
+pi@raspberrypi4:~/pwm_fan $ cat /var/log/pwm_simple_GPIO_6-13.rpm
+1240
+
+pi@raspberrypi4:~/pwm_fan $ cat /var/log/pwm_simple_GPIO_6-13.log
+actualTemp 46.74 TempDiff 1.74 pDiff 8.69 pwmDuty    17
+```
