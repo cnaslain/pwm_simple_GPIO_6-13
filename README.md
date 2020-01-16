@@ -1,5 +1,4 @@
-# pwm_simple_GPIO_6-13
-Raspberry Pi simple PWM script
+# Raspberry Pi simple PWM solution
 
 This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1514761 article post.
 
