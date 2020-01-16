@@ -1,6 +1,6 @@
 # Raspberry Pi simple PWM solution
 
-This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1514761 article post.
+This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1511085 article post by Artain.
 
 Hardware: 
 - Raspberry Pi 4 B
@@ -14,6 +14,7 @@ Connexion of the 4 pin wire:
 - Blue: PWM on GPIO 13
 
 Wire chart: ![Wiring diagram](electronic_diagram.jpg)
+Author: Artain
 
 I've just modified the following stuffs on the python script:
 - default path to the rpm file
