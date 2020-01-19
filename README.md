@@ -5,7 +5,7 @@ This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&
 ## Hardware and building
 - Raspberry Pi 4 B (but it should work on all 40 pins GPIO Pi boards)
 - Noctua NF-A4x10 5V PWM 4 pins cooler
-- A 2.2 kΩ resistor
+- A 2.2 kΩ resistance
 
 Connexion of the 4 pin wire:
 - Black wire: GND
