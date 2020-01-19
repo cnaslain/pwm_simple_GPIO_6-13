@@ -1,4 +1,4 @@
-# Raspberry Pi simple PWM solution
+# Raspberry Pi simple PWM 4 pins fan solution
 
 This is based on https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=244194&start=25#p1511085 article post by Artain; thanks to him for this simple PWM solution.
 
