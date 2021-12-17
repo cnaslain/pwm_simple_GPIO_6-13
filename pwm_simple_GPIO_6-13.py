@@ -6,7 +6,10 @@ from time import sleep
 import signal
 import sys
 import RPi.GPIO as GPIO
-from Queue import Queue
+try:
+   import queue
+except ImportError:
+   import Queue as queue
 
 # following are the setting
 pwmPin = 13      #Pin with PWM capability please reference https://pinout.xyz/pinout/pin33_gpio13
@@ -67,7 +70,7 @@ class FreqThread(threading.Thread):
 #sets some initial data
 def setup():
         global pwmctr, tQueue
-        tQueue = Queue();
+        tQueue = queue.Queue();
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(pwmPin, GPIO.OUT)
@@ -101,7 +104,7 @@ def changeDuty(): #calculates the needed PWM duty and changes it
                 pwmDuty = 0
         pwmctr.ChangeDutyCycle(pwmDuty)
         message = "actualTemp {:4.2f} TempDiff {:4.2f} pDiff {:4.2f} pwmDuty {:5.0f}".format(temp, diff, pDiff, pwmDuty)
-        print message
+        print(message)
         log = open('/var/log/pwm_simple_GPIO_6-13.log','w')
         log.write(message)
         return()
